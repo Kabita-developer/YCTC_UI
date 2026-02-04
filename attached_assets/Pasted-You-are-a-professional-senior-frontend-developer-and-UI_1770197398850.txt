@@ -1,0 +1,84 @@
+You are a professional senior frontend developer and UI/UX designer.
+
+I want to build a modern Educational / Online Learning Platform website.
+I have attached a reference website image.
+
+Your task:
+– Carefully analyze the reference image layout, section structure, spacing, colors, typography, cards, buttons, icons, and overall visual style.
+– Recreate the FULL website layout as closely as possible.
+– If exact copy is not possible, create a visually better and more polished version with the same design language.
+
+Website Requirements:
+1. Hero Section
+   - Full-width modern hero section
+   - Left side: Big bold heading like "Grow Your Learning" style
+   - Subheading text
+   - Two CTA buttons (Primary + Secondary)
+   - Right side: Educational image or illustration
+   - Dark green gradient background
+
+2. Feature Section
+   - 3 or 4 feature cards (Scholarship Facility, Online Learning, Library, etc.)
+   - Use icons
+   - Clean white background
+
+3. About Us Section
+   - Image + content layout (image left, text right)
+   - Bullet points
+   - Call-to-action button
+   - Experience counter (e.g. 16+ Years Experience)
+
+4. Courses Section
+   - Tabs or sidebar categories (Graduate, Undergraduate, Online, Scholarship)
+   - Course cards with:
+     • Image
+     • Course title
+     • Rating stars
+     • Price
+     • Enroll button
+
+5. Testimonials Section
+   - Student feedback cards
+   - Profile images
+   - Ratings
+
+6. Blog / News Section
+   - Latest articles cards
+
+7. Footer
+   - Dark footer
+   - Logo
+   - Quick links
+   - Contact info
+   - Social icons
+
+Tech Stack:
+- React + Vite (or Next.js if needed)
+- Tailwind CSS
+- Responsive for desktop, tablet, mobile
+- Clean and readable component structure
+
+Dummy Data:
+- Use realistic dummy course names
+- Dummy prices, ratings, instructors
+- Dummy testimonials
+- Dummy blog posts
+(All dummy data should look real and professional)
+
+Design Rules:
+- Match spacing and alignment from the reference image
+- Use green / dark green theme
+- Rounded cards
+- Soft shadows
+- Smooth hover animations
+- Modern fonts
+
+Final Output:
+- Fully working frontend project
+- Proper folder structure
+- Reusable components
+- Clean and optimized code
+
+Important:
+Even if exact design matching is not possible, make the design visually beautiful, premium, and professional.
+Do NOT leave empty sections.
