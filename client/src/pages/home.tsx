@@ -37,9 +37,13 @@ type Course = {
   rating: number;
   reviews: number;
   price: number;
+  totalFeesDisplay?: string;
   level: string;
   duration: string;
   lessons: number;
+  monthlyFee: string;
+  admissionFee: string;
+  atATimeOffer: string;
 };
 
 type Testimonial = {
@@ -171,50 +175,66 @@ export default function Home() {
       {
         id: "c1",
         category: "Graduate",
-        title: "Business Innovation & Product Strategy",
+        title: "ADCA (Advanced Diploma in Computer Applications)",
         image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=70",
         rating: 4.8,
         reviews: 1534,
-        price: 420,
+        price: 7200,
+        totalFeesDisplay: "₹7200",
         level: "Advanced",
-        duration: "8 weeks",
+        duration: "1 Year",
         lessons: 24,
+        monthlyFee: "₹600 × 10 ",
+        admissionFee: "₹1200",
+        atATimeOffer: "",
       },
       {
         id: "c2",
         category: "Graduate",
-        title: "Banking Management for Modern Economies",
+        title: "DCA (Diploma in Computer Applications)",
         image: "https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=900&q=70",
         rating: 4.6,
         reviews: 928,
-        price: 300,
+        price: 5150,
+        totalFeesDisplay: "₹5150",
         level: "Intermediate",
-        duration: "6 weeks",
+        duration: "1 Year ",
         lessons: 18,
+        monthlyFee: "₹500 * 8",
+        admissionFee: "₹1150",
+        atATimeOffer: "4750",
       },
       {
         id: "c3",
         category: "Undergraduate",
-        title: "Intro to Computer Science & Problem Solving",
+        title: "Spoken English",
         image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=70",
         rating: 4.7,
         reviews: 2041,
-        price: 180,
+        price: 2000,
+        totalFeesDisplay: "₹2000",
         level: "Beginner",
-        duration: "10 weeks",
+        duration: "6 Months",
         lessons: 32,
+        monthlyFee: "₹500 * 2",
+        admissionFee: "₹1000",
+        atATimeOffer: "",
       },
       {
         id: "c4",
         category: "Undergraduate",
-        title: "Digital Marketing Foundations: Search & Social",
+        title: "English Typing",
         image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=900&q=70",
         rating: 4.5,
         reviews: 1120,
         price: 160,
+        totalFeesDisplay: "₹1150",
         level: "Beginner",
-        duration: "5 weeks",
+        duration: "3 Months",
         lessons: 16,
+        monthlyFee: "",
+        admissionFee: "₹1150",
+        atATimeOffer: "",
       },
       {
         id: "c5",
@@ -227,6 +247,9 @@ export default function Home() {
         level: "All Levels",
         duration: "7 weeks",
         lessons: 22,
+        monthlyFee: "₹400",
+        admissionFee: "₹800",
+        atATimeOffer: "12% Off",
       },
       {
         id: "c6",
@@ -239,6 +262,9 @@ export default function Home() {
         level: "Intermediate",
         duration: "6 weeks",
         lessons: 19,
+        monthlyFee: "₹380",
+        admissionFee: "₹750",
+        atATimeOffer: "10% Off",
       },
       {
         id: "c7",
@@ -251,6 +277,9 @@ export default function Home() {
         level: "Beginner",
         duration: "12 weeks",
         lessons: 40,
+        monthlyFee: "Free",
+        admissionFee: "Free",
+        atATimeOffer: "Full Scholarship",
       },
       {
         id: "c8",
@@ -263,6 +292,9 @@ export default function Home() {
         level: "All Levels",
         duration: "4 weeks",
         lessons: 12,
+        monthlyFee: "Free",
+        admissionFee: "Free",
+        atATimeOffer: "Full Scholarship",
       },
     ],
     [],
@@ -368,8 +400,8 @@ export default function Home() {
                   className="font-display text-4xl leading-[1.05] tracking-tight sm:text-5xl"
                   data-testid="text-hero-title"
                 >
-                  Welcome to Jatiya Yuva
-                  <span className="block text-emerald-200">Computer Shaksharta Mission</span>
+                  Welcome to <span className="text-emerald-200">JYCSM</span>
+                  <span className="block">Skill Development Mission</span>
                 </h1>
 
                 <p
@@ -670,15 +702,15 @@ export default function Home() {
                           </div>
                         </div>
                         <div className="text-right">
-                          <div className="text-xs text-muted-foreground" data-testid={`text-course-price-label-${c.id}`}>Price</div>
+                          <div className="text-xs text-muted-foreground" data-testid={`text-course-price-label-${c.id}`}>Total Fees</div>
                           <div className="font-display text-2xl text-foreground" data-testid={`text-course-price-${c.id}`}>
-                            {c.price === 0 ? "Free" : `$${c.price}`}
+                            {c.totalFeesDisplay ?? (c.price === 0 ? "Free" : `$${c.price}`)}
                           </div>
                         </div>
                       </div>
 
-                      <div className="mt-4 grid grid-cols-3 gap-2 text-xs" data-testid={`row-course-meta-${c.id}`}>
-                        {[{ k: "Duration", v: c.duration }, { k: "Lessons", v: String(c.lessons) }, { k: "Mode", v: "Online" }].map(
+                      <div className="mt-4 grid grid-cols-4 gap-2 text-xs" data-testid={`row-course-meta-${c.id}`}>
+                        {[{ k: "Duration", v: c.duration }, { k: "Monthly Fee", v: c.monthlyFee }, { k: "Admission Fee", v: c.admissionFee }, { k: "At a Time Offer", v: c.atATimeOffer }].map(
                           (m) => (
                             <div key={m.k} className="rounded-2xl bg-secondary/50 px-3 py-2 ring-1 ring-emerald-100/60">
                               <div className="text-[10px] font-semibold text-emerald-700/80">{m.k}</div>

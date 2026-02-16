@@ -101,9 +101,17 @@
 }
 
 @layer base {
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
   * {
     @apply border-border;
   }
+
   body {
     font-family: var(--font-sans);
     @apply antialiased bg-background text-foreground;
@@ -125,6 +133,7 @@
   .noise-overlay {
     position: relative;
   }
+
   .noise-overlay::after {
     content: "";
     pointer-events: none;
@@ -141,15 +150,17 @@
     position: relative;
     overflow: hidden;
   }
+
   .shine::before {
     content: "";
     position: absolute;
     inset: -1px;
-    background: radial-gradient(800px 240px at var(--x, 30%) var(--y, 10%), rgba(255,255,255,.14), transparent 55%);
+    background: radial-gradient(800px 240px at var(--x, 30%) var(--y, 10%), rgba(255, 255, 255, .14), transparent 55%);
     opacity: 0;
     transition: opacity 250ms ease;
     pointer-events: none;
   }
+
   .shine:hover::before {
     opacity: 1;
   }
@@ -157,6 +168,7 @@
   .lift {
     transition: transform 220ms ease, box-shadow 220ms ease;
   }
+
   .lift:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
@@ -164,5 +176,20 @@
 
   .container-pad {
     @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-marquee {
+    display: inline-block;
+    animation: marquee 30s linear infinite;
   }
 }

@@ -20,7 +20,6 @@ import { Card } from "@/components/ui/card";
 
 export default function About() {
     const sections = [
-        { id: "about-jycsm", label: "About JYCSM", icon: <Info className="h-5 w-5" /> },
         { id: "registration", label: "Registration & Certification", icon: <ShieldCheck className="h-5 w-5" /> },
         { id: "objective", label: "Program Objective", icon: <Target className="h-5 w-5" /> },
         { id: "faculty", label: "Our Faculty", icon: <Users className="h-5 w-5" /> },
@@ -35,46 +34,28 @@ export default function About() {
 
             <main>
                 {/* Hero Section */}
-                <section className="relative overflow-hidden py-24 text-white md:py-32">
+                <section className="relative overflow-hidden pt-2 pb-0 md:pt-2 md:pb-0">
                     <div className="absolute inset-0 -z-10">
                         <img
                             src={aboutBanner}
                             alt="About Banner"
                             className="h-full w-full object-cover object-center"
                         />
-                        <div className="absolute inset-0 bg-emerald-950/75 backdrop-blur-[2px]" />
+                        <div className="absolute inset-0 bg-white/50 backdrop-blur-[2px]" />
                     </div>
                     <div className="container-pad relative z-10">
                         <div className="max-w-3xl">
-                            <h1 className="font-display text-4xl leading-tight tracking-tight sm:text-6xl lg:text-7xl">
-                                Experience Excellence in <span className="text-emerald-400 font-semibold underline decoration-emerald-400/30 underline-offset-8">Computer Education</span>
+                            <h1 className="font-display text-4xl leading-tight tracking-tight sm:text-6xl lg:text-7xl text-foreground">
+                                Experience Excellence in
                             </h1>
-                            <p className="mt-8 text-xl text-white/90 leading-relaxed font-light">
+                            <p className="mt-8 text-xl text-slate-700 leading-relaxed font-light">
                                 Jatiya Yuva Computer Saksharta Mission (JYCSM) is a national initiative dedicated to empowering India's youth through digital literacy and technical proficiency.
                             </p>
                         </div>
                     </div>
                 </section>
 
-                {/* Breadcrumbs / Quick Nav */}
-                <div className="bg-white border-b sticky top-16 z-30 hidden md:block">
-                    <div className="container-pad">
-                        <div className="flex items-center gap-8 overflow-x-auto py-4 no-scrollbar">
-                            {sections.map((s) => (
-                                <a
-                                    key={s.id}
-                                    href={`#${s.id}`}
-                                    className="flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-emerald-600 whitespace-nowrap"
-                                >
-                                    <span className="text-emerald-500/80">{s.icon}</span>
-                                    {s.label}
-                                </a>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-
-                <section className="py-16 md:py-24">
+                <section className="pb-16 md:pb-24">
                     <div className="container-pad">
                         <div className="grid gap-12 lg:grid-cols-[1fr_320px]">
                             <div className="space-y-20">
@@ -258,7 +239,7 @@ export default function About() {
                                     <Card className="p-6 border-none bg-emerald-600 text-white text-center">
                                         <h4 className="font-display text-xl mb-2">Ready to Start?</h4>
                                         <p className="text-white/80 text-xs mb-4">Join India's leading computer literacy mission today.</p>
-                                        <a hrerf="/#footer" className="inline-block w-full py-2.5 bg-white text-emerald-700 rounded-xl text-sm font-bold transition-transform hover:scale-105">
+                                        <a href="/#footer" className="inline-block w-full py-2.5 bg-white text-emerald-700 rounded-xl text-sm font-bold transition-transform hover:scale-105">
                                             Join JYCSM
                                         </a>
                                     </Card>
