@@ -162,32 +162,7 @@ export default function AbacusCourses() {
                                         </span>
                                     </div>
 
-                                    <div className="mt-5 grid grid-cols-2 gap-2">
-                                        {[
-                                            { k: "Duration", v: c.duration },
-                                            { k: "Monthly Fee", v: c.monthlyFee },
-                                            { k: "Admission", v: c.admissionFee },
-                                            { k: "At a Time", v: c.atATimeOffer },
-                                        ].map((m) => (
-                                            <div
-                                                key={m.k}
-                                                className="rounded-xl bg-slate-50 px-3 py-2.5 ring-1 ring-slate-100"
-                                            >
-                                                <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-500">
-                                                    {m.k}
-                                                </div>
-                                                <div className="mt-0.5 font-semibold text-slate-800 text-sm">{m.v || "—"}</div>
-                                            </div>
-                                        ))}
-                                    </div>
-
                                     <div className="mt-6 flex flex-col gap-4">
-                                        <div>
-                                            <div className="text-xs font-medium text-slate-500">Total Fees</div>
-                                            <div className="font-display text-xl font-bold text-emerald-700">
-                                                {c.totalFeesDisplay}
-                                            </div>
-                                        </div>
                                         <div className="flex flex-wrap gap-2">
                                             <Button
                                                 variant="outline"

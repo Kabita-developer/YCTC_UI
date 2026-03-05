@@ -9,17 +9,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Building2, MapPin } from "lucide-react";
 
 const officeDetails = [
-    { line: "JYCSM Skill Development Pvt. Ltd." },
-    { line: "Jatiya Yuva Computer Shaksharta Mission." },
+    { line: "MJYCSM Skill Development Pvt. Ltd." },
+    { line: "Memari Jatiya Yuva Computer Shaksharta Mission." },
     { line: "Memari Jatiya Yuva Computer." },
     { line: "Memari, West Bengal 713146" },
     { line: "Contact No : Helpline No: 9735414141" },
-    { line: "Postal and Courier Department: 9547709391" },
-    { line: "Certificate Department: 9733849848" },
-    { line: "Office Executive : 6295859920" },
-    { line: "Business Development Manager : 8001191530" },
-    { line: "Managing Director: 9679841937" },
-    { line: "Mail ID: jycsm.in@gmail.com" },
+    { line: "Mail ID: memarijycsm@gmail.com" },
 ];
 
 export default function Contact() {

@@ -84,8 +84,8 @@ const certificateCourses: Course[] = [
         monthlyFee: "₹700 × 3",
         admissionFee: "₹1000",
         atATimeOffer: "Pay Monthly"
-      },
-      {
+    },
+    {
         id: "cert6",
         title: "Advanced MS Excel",
         image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=70",
@@ -97,8 +97,8 @@ const certificateCourses: Course[] = [
         monthlyFee: "Included",
         admissionFee: "₹1500",
         atATimeOffer: "No Monthly Fee"
-      },
-      {
+    },
+    {
         id: "cert7",
         title: "AutoCAD Designing Course",
         image: "/134d03ab37fd6c46d3730dc016def24f.jpg?auto=format&fit=crop&w=900&q=70",
@@ -110,8 +110,8 @@ const certificateCourses: Course[] = [
         monthlyFee: "₹1000 × 2",
         admissionFee: "₹2000",
         atATimeOffer: "Pay Together ₹2000"
-      },
-      {
+    },
+    {
         id: "cert8",
         title: "Computer Hardware (6 Months)",
         image: "/aa9726ec3cd7460f4d6aa428d07eb500.jpg?auto=format&fit=crop&w=900&q=70",
@@ -123,8 +123,8 @@ const certificateCourses: Course[] = [
         monthlyFee: "₹540 × 4",
         admissionFee: "₹1000",
         atATimeOffer: "Flexible Payment"
-      },
-      {
+    },
+    {
         id: "cert9",
         title: "Computer Hardware (1 Year)",
         image: "/kjj.jpg",
@@ -136,8 +136,8 @@ const certificateCourses: Course[] = [
         monthlyFee: "₹600 × 10",
         admissionFee: "₹1200",
         atATimeOffer: "Pay Monthly"
-      },
-      {
+    },
+    {
         id: "cert11",
         title: "AI & Python Programming",
         image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=70",
@@ -149,8 +149,8 @@ const certificateCourses: Course[] = [
         monthlyFee: "₹1000 × 2",
         admissionFee: "₹2000",
         atATimeOffer: "Pay Together ₹2000"
-      },
-      {
+    },
+    {
         id: "cert12",
         title: "Python Programming",
         image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=70",
@@ -162,8 +162,8 @@ const certificateCourses: Course[] = [
         monthlyFee: "₹500 × 3",
         admissionFee: "₹1000",
         atATimeOffer: "Flexible Plan"
-      },
-      {
+    },
+    {
         id: "cert13",
         title: "GST & Income Tax Course",
         image: "https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=900&q=70",
@@ -175,8 +175,8 @@ const certificateCourses: Course[] = [
         monthlyFee: "₹1300 × 3",
         admissionFee: "₹1500",
         atATimeOffer: "Special ₹4900"
-      },
-      {
+    },
+    {
         id: "cert14",
         title: "Share Market & Mutual Fund",
         image: "https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=900&q=70",
@@ -188,8 +188,8 @@ const certificateCourses: Course[] = [
         monthlyFee: "₹2000 × 1",
         admissionFee: "₹2000",
         atATimeOffer: ""
-      },
-      {
+    },
+    {
         id: "cert15",
         title: "JavaScript Programming",
         image: "/jaaa.jpg?auto=format&fit=crop&w=900&q=70",
@@ -201,8 +201,8 @@ const certificateCourses: Course[] = [
         monthlyFee: "₹500 × 3",
         admissionFee: "₹1000",
         atATimeOffer: ""
-      },
-      {
+    },
+    {
         id: "cert16",
         title: "HTML Web Design Basics",
         image: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=900&q=70",
@@ -214,8 +214,8 @@ const certificateCourses: Course[] = [
         monthlyFee: "Included",
         admissionFee: "₹500",
         atATimeOffer: ""
-      },
-      {
+    },
+    {
         id: "cert17",
         title: "C Programming Language",
         image: "/c.jpg?auto=format&fit=crop&w=900&q=70",
@@ -227,8 +227,8 @@ const certificateCourses: Course[] = [
         monthlyFee: "₹500 × 3",
         admissionFee: "₹1000",
         atATimeOffer: ""
-      },
-      {
+    },
+    {
         id: "cert18",
         title: "C & C++ Programming",
         image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=70",
@@ -240,8 +240,8 @@ const certificateCourses: Course[] = [
         monthlyFee: "₹540 × 5",
         admissionFee: "₹1000",
         atATimeOffer: "Pay Monthly"
-      },
-      {
+    },
+    {
         id: "cert19",
         title: "C++ Programming (Only)",
         image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=900&q=70",
@@ -253,8 +253,8 @@ const certificateCourses: Course[] = [
         monthlyFee: "₹500 × 3",
         admissionFee: "₹1000",
         atATimeOffer: "Flexible Plan"
-      }
-    
+    }
+
 ];
 
 function RatingStars({ rating }: { rating: number }) {
@@ -351,32 +351,7 @@ export default function CertificateCourses() {
                                         </span>
                                     </div>
 
-                                    <div className="mt-6 grid grid-cols-2 gap-3 lg:grid-cols-4">
-                                        {[
-                                            { k: "Duration", v: c.duration },
-                                            { k: "Monthly Fee", v: c.monthlyFee },
-                                            { k: "Admission Fee", v: c.admissionFee },
-                                            { k: "At a Time Offer", v: c.atATimeOffer },
-                                        ].map((m) => (
-                                            <div
-                                                key={m.k}
-                                                className="rounded-xl bg-slate-50 px-4 py-3 ring-1 ring-slate-100"
-                                            >
-                                                <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-500">
-                                                    {m.k}
-                                                </div>
-                                                <div className="mt-1 font-semibold text-slate-800">{m.v || "—"}</div>
-                                            </div>
-                                        ))}
-                                    </div>
-
                                     <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                                        <div>
-                                            <div className="text-xs font-medium text-slate-500">Total Fees</div>
-                                            <div className="font-display text-2xl font-bold text-emerald-700">
-                                                {c.totalFeesDisplay}
-                                            </div>
-                                        </div>
                                         <div className="flex flex-wrap gap-3">
                                             <Button
                                                 variant="outline"

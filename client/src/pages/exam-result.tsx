@@ -52,7 +52,7 @@ export default function ExamResult() {
                             Examination & Result
                         </h1>
                         <p className="text-lg text-slate-600 leading-relaxed font-light">
-                            JYCSM provides a standardized examination system across India, blending online efficiency with rigorous evaluation methods.
+                            MJYCSM provides a standardized examination system across India, blending online efficiency with rigorous evaluation methods.
                         </p>
                     </div>
 
@@ -69,7 +69,7 @@ export default function ExamResult() {
                                         <h2 className="font-display text-3xl">Evaluation System</h2>
                                     </div>
                                     <p className="text-slate-600 leading-relaxed text-lg mb-10">
-                                        JYCSM has introduced both <strong className="text-slate-900">Online and Offline</strong> examination systems. Enrolled students can apply for the examination at their respective ASC after the completion of the course or specific modules.
+                                        MJYCSM has introduced both <strong className="text-slate-900">Online and Offline</strong> examination systems. Enrolled students can apply for the examination at their respective ASC after the completion of the course or specific modules.
                                     </p>
 
                                     <div className="grid sm:grid-cols-2 gap-6">
@@ -140,7 +140,7 @@ export default function ExamResult() {
                                 Transparent and timely results. View your performance directly on our official portal within <strong className="text-blue-600">30 days</strong> of course completion.
                             </p>
                             <a
-                                href="https://www.jycsm.com"
+                                href="https://www.mjycsm.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="mt-auto inline-flex items-center justify-center gap-2 w-full py-4 text-blue-600 font-bold bg-blue-50 rounded-2xl hover:bg-blue-100 transition-all border border-blue-100"
@@ -176,7 +176,7 @@ export default function ExamResult() {
                                     </div>
                                 </div>
                                 <div className="mt-12 pt-8 border-t border-white/10 text-center text-emerald-300 font-medium text-sm">
-                                    Verified and Validated by Jatiya Yuva Computer Saksharta Mission
+                                    Verified and Validated by Memari Jatiya Yuva Computer Saksharta Mission
                                 </div>
                             </div>
                         </Card>

@@ -1,7 +1,21 @@
 import { Link, useLocation } from "wouter";
+import { useState, useEffect, useRef } from "react";
+import { ChevronDown } from "lucide-react";
 
 export default function Navbar() {
     const [location] = useLocation();
+    const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
+    const navRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        function handleClickOutside(event: MouseEvent) {
+            if (navRef.current && !navRef.current.contains(event.target as Node)) {
+                setActiveSubmenu(null);
+            }
+        }
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
 
     const navItems = [
         { label: "Home", href: location === "/" ? "#home" : "/" },
@@ -10,7 +24,7 @@ export default function Navbar() {
             href: "/about",
             isPage: true,
             submenu: [
-                { label: "About JYCSM", href: "/about#about-jycsm" },
+                { label: "About MJYCSM", href: "/about#about-jycsm" },
                 { label: "Chairman Message", href: "/chairman-message" },
                 { label: "Mission & Vision", href: "/mission-vision" },
                 { label: "Affiliation", href: "/about#affiliation" },
@@ -28,7 +42,7 @@ export default function Navbar() {
                 { label: "Abacus", href: "/courses/Abacus" },
                 { label: "School Course", href: "/courses/school" },
                 { label: "Spoken English", href: "/courses/spoken-english" },
-               
+
             ]
         },
         { label: "Gallery", href: "/gallery", isPage: true },
@@ -37,7 +51,7 @@ export default function Navbar() {
             href: "/franchise",
             isPage: true,
             submenu: [
-                { label: "Why JYCSM", href: "/franchise/why-jycsm" },
+                { label: "Why MJYCSM", href: "/franchise/why-jycsm" },
                 { label: "Affiliation Process", href: "/franchise/affiliation" },
                 { label: "Apply Online", href: "/franchise/apply-online" },
                 { label: "Authorized Centers", href: "/franchise/centers" },
@@ -45,7 +59,7 @@ export default function Navbar() {
                 { label: "Partner Login", href: "/franchise/partner-login" },
             ]
         },
-        { label: "JYCSM Centers", href: "/centers", isPage: true },
+        { label: "Centers", href: "/centers", isPage: true },
         { label: "Downloads", href: "/downloads", isPage: true },
         {
             label: "Student",
@@ -78,6 +92,10 @@ export default function Navbar() {
         submenu?: { label: string; href: string }[];
     }
 
+    const toggleSubmenu = (label: string) => {
+        setActiveSubmenu(activeSubmenu === label ? null : label);
+    };
+
     return (
         <header className="bg-hero noise-overlay text-white" data-testid="header-nav">
             <div className="container-pad">
@@ -88,33 +106,45 @@ export default function Navbar() {
                         </div>
                     </Link>
 
-                    <nav className="hidden items-center gap-7 text-sm text-white/85 md:flex" data-testid="nav-links">
+                    <nav ref={navRef} className="hidden items-center gap-7 text-sm text-white/85 md:flex" data-testid="nav-links">
                         {(navItems as NavItem[]).map((item) => (
-                            <div key={item.label} className="relative group h-full flex items-center">
-                                {item.isPage ? (
-                                    <Link
-                                        href={item.href}
-                                        className={`transition-colors hover:text-white py-4 ${location === item.href ? "text-white font-semibold" : ""}`}
+                            <div key={item.label} className="relative h-full flex items-center">
+                                {item.submenu ? (
+                                    <button
+                                        onClick={() => toggleSubmenu(item.label)}
+                                        className={`flex items-center gap-1 transition-colors hover:text-white py-4 ${activeSubmenu === item.label ? "text-white font-semibold" : ""}`}
                                         data-testid={`link-nav-${item.label.toLowerCase()}`}
                                     >
                                         {item.label}
-                                    </Link>
+                                        <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${activeSubmenu === item.label ? "rotate-180" : ""}`} />
+                                    </button>
                                 ) : (
-                                    <a
-                                        href={item.href}
-                                        className="transition-colors hover:text-white py-4"
-                                        data-testid={`link-nav-${item.label.toLowerCase()}`}
-                                    >
-                                        {item.label}
-                                    </a>
+                                    item.isPage ? (
+                                        <Link
+                                            href={item.href}
+                                            className={`transition-colors hover:text-white py-4 ${location === item.href ? "text-white font-semibold" : ""}`}
+                                            data-testid={`link-nav-${item.label.toLowerCase()}`}
+                                        >
+                                            {item.label}
+                                        </Link>
+                                    ) : (
+                                        <a
+                                            href={item.href}
+                                            className="transition-colors hover:text-white py-4"
+                                            data-testid={`link-nav-${item.label.toLowerCase()}`}
+                                        >
+                                            {item.label}
+                                        </a>
+                                    )
                                 )}
 
-                                {item.submenu && (
-                                    <div className="absolute top-full left-0 mt-0 w-64 bg-white text-slate-800 shadow-xl rounded-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 transform origin-top scale-95 group-hover:scale-100 border border-slate-100 ring-1 ring-black/5 max-h-[70vh] overflow-y-auto scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
+                                {item.submenu && activeSubmenu === item.label && (
+                                    <div className="absolute top-full left-0 mt-0 w-64 bg-white text-slate-800 shadow-xl rounded-xl py-2 z-50 transform origin-top border border-slate-100 ring-1 ring-black/5 max-h-[70vh] overflow-y-auto scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
                                         {item.submenu.map((sub) => (
                                             <Link
                                                 key={sub.label}
                                                 href={sub.href}
+                                                onClick={() => setActiveSubmenu(null)}
                                                 className="block px-4 py-2.5 hover:bg-emerald-50 hover:text-emerald-700 transition-colors text-xs font-semibold"
                                             >
                                                 {sub.label}

@@ -49,7 +49,7 @@ export default function About() {
                                 Experience Excellence in
                             </h1>
                             <p className="mt-8 text-xl text-slate-700 leading-relaxed font-light">
-                                Jatiya Yuva Computer Saksharta Mission (JYCSM) is a national initiative dedicated to empowering India's youth through digital literacy and technical proficiency.
+                                Memari Jatiya Yuva Computer Saksharta Mission (MJYCSM) is a national initiative dedicated to empowering India's youth through digital literacy and technical proficiency.
                             </p>
                         </div>
                     </div>
@@ -65,14 +65,14 @@ export default function About() {
                                         <div className="p-3 rounded-2xl bg-emerald-100 text-emerald-700">
                                             <Info className="h-6 w-6" />
                                         </div>
-                                        <h2 className="font-display text-3xl tracking-tight text-foreground sm:text-4xl">About JYCSM</h2>
+                                        <h2 className="font-display text-3xl tracking-tight text-foreground sm:text-4xl">About MJYCSM</h2>
                                     </div>
                                     <div className="prose prose-emerald max-w-none text-muted-foreground leading-relaxed text-lg space-y-6">
                                         <p>
-                                            Jatiya Yuva Computer Saksharta Mission (JYCSM) is a national programme of information technology education and development. A unit of Jatiya Yuva Computer Saksharta Mission, Registered as Autonomous Body, Under Govt. Of West Bengal based on Central Govt. TR Act, 1882, Govt. Of India (Registration No- IV-06888). JYCSM is also registered Empanelled under NPS - Planning Commission, Govt. Of India (Registration No –WB/2014/0083736) & Empanelled Under CSW, Govt. Of India. Registered Under Trade Mark Registry Act, 1999, Govt. Of India, Registered Under MHRD (CR Act), Govt. Of India.
+                                            Memari Jatiya Yuva Computer Saksharta Mission (MJYCSM) is a national programme of information technology education and development. A unit of Memari Jatiya Yuva Computer Saksharta Mission, Registered as Autonomous Body, Under Govt. Of West Bengal based on Central Govt. TR Act, 1882, Govt. Of India (Registration No- IV-06888). MJYCSM is also registered Empanelled under NPS - Planning Commission, Govt. Of India (Registration No –WB/2014/0083736) & Empanelled Under CSW, Govt. Of India. Registered Under Trade Mark Registry Act, 1999, Govt. Of India, Registered Under MHRD (CR Act), Govt. Of India.
                                         </p>
                                         <p>
-                                            Jatiya Yuva Computer Saksharta Mission is the new lighting of computer education in India. The great scholars realized to make each Indian's life fulfilled with prosperity and improvement, progress through computer education. Jatiya Yuva Computer Shaksharta Mission is pioneer of making their attempt real. On the golden highway of the twenty-first century to unite people for the formation of new India, JYCSM stands at your doorstep.
+                                            Memari Jatiya Yuva Computer Saksharta Mission is the new lighting of computer education in India. The great scholars realized to make each Indian's life fulfilled with prosperity and improvement, progress through computer education. Jatiya Yuva Computer Shaksharta Mission is pioneer of making their attempt real. On the highway of the twenty-first century to unite people for the formation of new India, MJYCSM stands at your doorstep.
                                         </p>
                                     </div>
                                 </section>
@@ -84,7 +84,7 @@ export default function About() {
                                         <div className="relative z-10">
                                             <h2 className="font-display text-3xl mb-6">Registration & Certification</h2>
                                             <p className="text-emerald-50 text-xl leading-relaxed font-light">
-                                                Jatiya Yuva Computer Saksharta Mission is an ISO 9001:2008 Certified Organization by Joint Accreditation System Australia & New Zealand (JAS-ANZ) for Quality Management System. The Institute has also filled application (Word mark JYCSM Application No. 2832137 Class 41) for Name & Logo registration under Ministry of Commerce & Industry, Department of Industrial Policy & Promotion, Controller General of Patents Designs and Trade Marks, Govt. of India.
+                                                Memari Jatiya Yuva Computer Saksharta Mission is an ISO 9001:2008 Certified Organization by Joint Accreditation System Australia & New Zealand (JAS-ANZ) for Quality Management System. The Institute has also filled application (Word mark MJYCSM Application No. 2832137 Class 41) for Name & Logo registration under Ministry of Commerce & Industry, Department of Industrial Policy & Promotion, Controller General of Patents Designs and Trade Marks, Govt. of India.
                                             </p>
                                         </div>
                                     </Card>
@@ -100,12 +100,12 @@ export default function About() {
                                     </div>
                                     <div className="bg-white p-8 rounded-[32px] border border-slate-200 shadow-sm">
                                         <p className="text-muted-foreground text-xl leading-relaxed">
-                                            In present time, some big institutions run their certificate/diploma programmes at very high charges, which lower and middle-class families cannot afford. JYCSM was established to provide better higher technical education in computers for every section of society at affordable charges all over India.
+                                            In present time, some big institutions run their certificate/diploma programmes at very high charges, which lower and middle-class families cannot afford. MJYCSM was established to provide better higher technical education in computers for every section of society at affordable charges all over India.
                                         </p>
                                     </div>
                                 </section>
 
-                                {/* JYCSM Faculty */}
+                                {/* MJYCSM Faculty */}
                                 <section id="faculty" className="scroll-mt-32">
                                     <div className="grid gap-8 md:grid-cols-2">
                                         <div className="space-y-6">
@@ -116,7 +116,7 @@ export default function About() {
                                                 <h2 className="font-display text-3xl text-foreground">Our Expert Faculty</h2>
                                             </div>
                                             <p className="text-muted-foreground text-lg leading-relaxed">
-                                                JYCSM faculty are full-time, qualified, and friendly professionals. They are trained to understand student psychology and simplify complex concepts. Training is equally divided into theory and practical sessions, with unlimited machine time to boost creativity and confidence.
+                                                MJYCSM faculty are full-time, qualified, and friendly professionals. They are trained to understand student psychology and simplify complex concepts. Training is equally divided into theory and practical sessions, with unlimited machine time to boost creativity and confidence.
                                             </p>
                                         </div>
                                         <div className="relative rounded-[32px] overflow-hidden aspect-video shadow-2xl">
@@ -240,7 +240,7 @@ export default function About() {
                                         <h4 className="font-display text-xl mb-2">Ready to Start?</h4>
                                         <p className="text-white/80 text-xs mb-4">Join India's leading computer literacy mission today.</p>
                                         <a href="/#footer" className="inline-block w-full py-2.5 bg-white text-emerald-700 rounded-xl text-sm font-bold transition-transform hover:scale-105">
-                                            Join JYCSM
+                                            Join MJYCSM
                                         </a>
                                     </Card>
                                 </div>

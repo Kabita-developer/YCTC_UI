@@ -4,17 +4,17 @@ import { Card } from "@/components/ui/card";
 import { Download, FileText } from "lucide-react";
 
 const downloadItems = [
-    { title: "JYCSM Admission Form", href: "/3m93zh2582quFORM 1 (1).pdf", downloadFilename: "JYCSM-Admission-Form.pdf" },
-    { title: "JYCSM Exam Form", href: "/hxycok8vs13zJYCSM_Exam_Form.pdf", downloadFilename: "JYCSM-Exam-Form.pdf" },
-    { title: "JYCSM Prospectus", href: "/mbo3nhtpr8jmjycsm-prospectus-new-5.pdf", downloadFilename: "JYCSM-Prospectus.pdf" },
-    { title: "JYCSM Sample Certificate", href: "/0twq1hoq6hudSAMPLE.jpg", downloadFilename: "JYCSM-Sample-Certificate.jpg" },
-    { title: "JYCSM Mark Sheet Sample", href: "/5k1mpxwdilcdSC.jpg", downloadFilename: "JYCSM-Mark-Sheet-Sample.jpg" },
-    { title: "JYCSM Half Logo", href: "/q4kgpjz3wz3bJYCSM Half logo.jpg", downloadFilename: "JYCSM-Half-Logo.jpg" },
-    { title: "JYCSM Skill Development Logo", href: "/keiy4h9eh0dlJYCSM Skill Logo.jpg", downloadFilename: "JYCSM-Skill-Development-Logo.jpg" },
-    { title: "JYCSM Logo PNG", href: "/8dp3hxdvd0hrFull English Logo PNG.png", downloadFilename: "JYCSM-Logo.png" },
+    { title: "MJYCSM Admission Form", href: "/3m93zh2582quFORM 1 (1).pdf", downloadFilename: "MJYCSM-Admission-Form.pdf" },
+    { title: "MJYCSM Exam Form", href: "/hxycok8vs13zJYCSM_Exam_Form.pdf", downloadFilename: "MJYCSM-Exam-Form.pdf" },
+    { title: "MJYCSM Prospectus", href: "/mbo3nhtpr8jmjycsm-prospectus-new-5.pdf", downloadFilename: "MJYCSM-Prospectus.pdf" },
+    { title: "MJYCSM Sample Certificate", href: "/0twq1hoq6hudSAMPLE.jpg", downloadFilename: "MJYCSM-Sample-Certificate.jpg" },
+    { title: "MJYCSM Mark Sheet Sample", href: "/5k1mpxwdilcdSC.jpg", downloadFilename: "MJYCSM-Mark-Sheet-Sample.jpg" },
+    { title: "MJYCSM Half Logo", href: "/q4kgpjz3wz3bJYCSM Half logo.jpg", downloadFilename: "MJYCSM-Half-Logo.jpg" },
+    { title: "MJYCSM Skill Development Logo", href: "/keiy4h9eh0dlJYCSM Skill Logo.jpg", downloadFilename: "MJYCSM-Skill-Development-Logo.jpg" },
+    { title: "MJYCSM Logo PNG", href: "/8dp3hxdvd0hrFull English Logo PNG.png", downloadFilename: "MJYCSM-Logo.png" },
     { title: "Best Center List 2024", href: "#" },
-    { title: "JYCSM Bengali Logo", href: "/d13w0d0e67lqbengali logo 1.jpg", downloadFilename: "JYCSM-Bengali-Logo.jpg" },
-    { title: "JYCSM Assamese Logo", href: "/xpyka7ap9j1sASSAM JYCSM.png", downloadFilename: "JYCSM-Assamese-Logo.png" },
+    { title: "MJYCSM Bengali Logo", href: "/d13w0d0e67lqbengali logo 1.jpg", downloadFilename: "MJYCSM-Bengali-Logo.jpg" },
+    { title: "MJYCSM Assamese Logo", href: "/xpyka7ap9j1sASSAM JYCSM.png", downloadFilename: "MJYCSM-Assamese-Logo.png" },
 ];
 
 export default function Downloads() {

@@ -28,9 +28,9 @@ export default function AffiliationProcess() {
 
     const deliverables = [
         "Agreement Paper (Legal Contract)",
-        "JYCSM Authorized ASC Certificate",
+        "MJYCSM Authorized ASC Certificate",
         "Information Brochure and Registration form",
-        "Institute details on official JYCSM.COM website",
+        "Institute details on official MJYCSM.COM website",
         "Website login for management (exams, registrations)",
         "ALC Branded Flex Banner (6x3 feet)",
         "Sample Mark sheet, Certificate, and I-Card Book"
@@ -62,7 +62,7 @@ export default function AffiliationProcess() {
                             <div className="relative z-10">
                                 <h2 className="font-display text-3xl text-slate-900 mb-6">Our Shared Mission</h2>
                                 <p className="text-slate-600 text-lg leading-relaxed">
-                                    Jatiya Yuva Computer Saksharta Mission is a movement to literate the masses in computer education. We appreciate your kind interest in joining our mission. Whether you are in a District, City, or Village, we welcome you to become a pillar of digital literacy in India.
+                                    Memari Jatiya Yuva Computer Saksharta Mission is a movement to literate the masses in computer education. We appreciate your kind interest in joining our mission. Whether you are in a District, City, or Village, we welcome you to become a pillar of digital literacy in India.
                                 </p>
                             </div>
                         </Card>
@@ -105,7 +105,7 @@ export default function AffiliationProcess() {
                                         <div>
                                             <p className="font-bold text-slate-900 mb-1">Authorization Fee</p>
                                             <p className="text-2xl font-display text-emerald-600">₹15,000/-</p>
-                                            <p className="text-sm text-slate-500 mt-2">Payable via Online or Demand Draft in favor of <span className="text-slate-900 font-semibold">"Jatiya Yuva Computer Shaksharta Mission"</span> payable at Kalyani.</p>
+                                            <p className="text-sm text-slate-500 mt-2">Payable via Online or Demand Draft in favor of <span className="text-slate-900 font-semibold">"Memari Jatiya Yuva Computer Saksharta Mission"</span> payable at Kalyani.</p>
                                         </div>
                                     </div>
                                     <p className="text-sm italic text-amber-600">Note: Franchise registration fees are non-refundable.</p>
@@ -136,7 +136,7 @@ export default function AffiliationProcess() {
                                 <div>
                                     <h2 className="font-display text-4xl mb-6">What You Will Get?</h2>
                                     <p className="text-emerald-100 text-lg mb-8 leading-relaxed">
-                                        Upon successful affiliation, JYCSM provides complete branding and administrative support to help your center flourish.
+                                        Upon successful affiliation, MJYCSM provides complete branding and administrative support to help your center flourish.
                                     </p>
                                     <div className="inline-flex items-center gap-2 p-3 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20">
                                         <Globe className="h-5 w-5 text-emerald-200" />

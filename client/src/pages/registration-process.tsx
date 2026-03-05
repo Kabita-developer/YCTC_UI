@@ -28,7 +28,7 @@ export default function RegistrationProcess() {
         },
         {
             label: "Category Certificate",
-            desc: "Submit ST/SC/Handicapped certificate for fee relaxation as per JYCSM structure.",
+            desc: "Submit ST/SC/Handicapped certificate for fee relaxation as per MJYCSM structure.",
             icon: <FileText className="h-6 w-6 text-emerald-500" />
         },
     ];
@@ -60,7 +60,7 @@ export default function RegistrationProcess() {
                             Registration Process
                         </h1>
                         <p className="text-lg text-slate-600 leading-relaxed font-light">
-                            Your journey towards digital excellence starts here. Follow these guidelines to secure your admission at an Authorized JYCSM Center.
+                            Your journey towards digital excellence starts here. Follow these guidelines to secure your admission at an Authorized MJYCSM Center.
                         </p>
                     </div>
 
@@ -80,7 +80,7 @@ export default function RegistrationProcess() {
                                         To get registered, students must fill the application form provided with the Information Brochure. You can purchase the brochure from any <strong className="text-slate-900">Authorized Study Centre (ASC)</strong>.
                                     </p>
                                     <p>
-                                        JYCSM offers both regular and University courses (at selected ASCs). Ensure the <strong className="text-emerald-700 underline underline-offset-4">ASC name and code</strong> are correctly mentioned in your application.
+                                        MJYCSM offers both regular and University courses (at selected ASCs). Ensure the <strong className="text-emerald-700 underline underline-offset-4">ASC name and code</strong> are correctly mentioned in your application.
                                     </p>
                                     <div className="mt-8 p-6 rounded-3xl bg-slate-900 text-white">
                                         <div className="flex items-start gap-4">
@@ -88,7 +88,7 @@ export default function RegistrationProcess() {
                                             <div>
                                                 <p className="font-bold text-lg mb-2 text-emerald-400">Payment Details</p>
                                                 <p className="text-sm text-slate-300">Total fee payable via Demand Draft favoring:</p>
-                                                <p className="font-display text-xl text-white mt-2">"Jatiya Yuva Computer Saksharta Sansthan"</p>
+                                                <p className="font-display text-xl text-white mt-2">"Memari Jatiya Yuva Computer Saksharta Sansthan"</p>
                                                 <p className="text-xs text-slate-400 mt-1">Payable at Allahabad</p>
                                             </div>
                                         </div>

@@ -400,7 +400,7 @@ export default function Home() {
                   className="font-display text-4xl leading-[1.05] tracking-tight sm:text-5xl"
                   data-testid="text-hero-title"
                 >
-                  Welcome to <span className="text-emerald-200">JYCSM</span>
+                  Welcome to <span className="text-emerald-200">MJYCSM</span>
                   <span className="block">Skill Development Mission</span>
                 </h1>
 
@@ -570,7 +570,7 @@ export default function Home() {
                 <SectionHeading
                   kicker="About Us"
                   title="Empowering Youth Through Skill Development"
-                  desc="Jatiya Yuva Computer Saksharta Mission (JYCSM) is a national initiative dedicated to providing affordable and quality computer education across India. Our mission is to empower youth with practical IT skills and digital knowledge for a better future."
+                  desc="Memari Jatiya Yuva Computer Saksharta Mission (MJYCSM) is a national initiative dedicated to providing affordable and quality computer education across India. Our mission is to empower youth with practical IT skills and digital knowledge for a better future."
                   align="left"
                   testId="heading-about"
                 />
@@ -701,23 +701,6 @@ export default function Home() {
                             </span>
                           </div>
                         </div>
-                        <div className="text-right">
-                          <div className="text-xs text-muted-foreground" data-testid={`text-course-price-label-${c.id}`}>Total Fees</div>
-                          <div className="font-display text-2xl text-foreground" data-testid={`text-course-price-${c.id}`}>
-                            {c.totalFeesDisplay ?? (c.price === 0 ? "Free" : `$${c.price}`)}
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="mt-4 grid grid-cols-4 gap-2 text-xs" data-testid={`row-course-meta-${c.id}`}>
-                        {[{ k: "Duration", v: c.duration }, { k: "Monthly Fee", v: c.monthlyFee }, { k: "Admission Fee", v: c.admissionFee }, { k: "At a Time Offer", v: c.atATimeOffer }].map(
-                          (m) => (
-                            <div key={m.k} className="rounded-2xl bg-secondary/50 px-3 py-2 ring-1 ring-emerald-100/60">
-                              <div className="text-[10px] font-semibold text-emerald-700/80">{m.k}</div>
-                              <div className="mt-0.5 font-semibold text-foreground/90">{m.v}</div>
-                            </div>
-                          ),
-                        )}
                       </div>
 
                       <div className="mt-5 flex items-center justify-between">

@@ -32,7 +32,7 @@ export default function MissionVision() {
                                 </div>
                                 <h2 className="font-display text-3xl text-slate-900 mb-6">Mission</h2>
                                 <p className="text-lg leading-relaxed text-slate-600">
-                                    To be the single source for quality assurance in computer education among the nation's non-formal institutes. After turning out competent IT professionals in large numbers, JYCSM reach is now being extended to all regions of the country.
+                                    To be the single source for quality assurance in computer education among the nation's non-formal institutes. After turning out competent IT professionals in large numbers, MJYCSM reach is now being extended to all regions of the country.
                                 </p>
                             </div>
                         </Card>

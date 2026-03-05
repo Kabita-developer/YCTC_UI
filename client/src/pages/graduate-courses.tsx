@@ -142,32 +142,7 @@ export default function GraduateCourses() {
                                         </span>
                                     </div>
 
-                                    <div className="mt-6 grid grid-cols-2 gap-3 lg:grid-cols-4">
-                                        {[
-                                            { k: "Duration", v: c.duration },
-                                            { k: "Monthly Fee", v: c.monthlyFee },
-                                            { k: "Admission Fee", v: c.admissionFee },
-                                            { k: "At a Time Offer", v: c.atATimeOffer },
-                                        ].map((m) => (
-                                            <div
-                                                key={m.k}
-                                                className="rounded-xl bg-slate-50 px-4 py-3 ring-1 ring-slate-100"
-                                            >
-                                                <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-500">
-                                                    {m.k}
-                                                </div>
-                                                <div className="mt-1 font-semibold text-slate-800">{m.v || "—"}</div>
-                                            </div>
-                                        ))}
-                                    </div>
-
                                     <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                                        <div>
-                                            <div className="text-xs font-medium text-slate-500">Total Fees</div>
-                                            <div className="font-display text-2xl font-bold text-emerald-700">
-                                                {c.totalFeesDisplay}
-                                            </div>
-                                        </div>
                                         <div className="flex flex-wrap gap-3">
                                             <Button
                                                 variant="outline"

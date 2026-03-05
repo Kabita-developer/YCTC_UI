@@ -78,10 +78,10 @@ export default function WhyJYCSM() {
                     {/* Hero Section */}
                     <div className="mb-16 text-center max-w-4xl mx-auto">
                         <h1 className="font-display text-4xl tracking-tight text-slate-900 sm:text-5xl lg:text-6xl mb-6">
-                            Why JYCSM?
+                            Why MJYCSM?
                         </h1>
                         <p className="text-lg text-slate-600 leading-relaxed font-light">
-                            JYCSM provides a single source for quality assurance in computer education among the nation's non-formal institutes. Our mission is to provide maximum benefits to our Authorized Learning Centers (ALC) and Students through high-standard education and innovative support.
+                            MJYCSM provides a single source for quality assurance in computer education among the nation's non-formal institutes. Our mission is to provide maximum benefits to our Authorized Learning Centers (ALC) and Students through high-standard education and innovative support.
                         </p>
                     </div>
 
@@ -166,7 +166,7 @@ export default function WhyJYCSM() {
                                     </div>
                                     <h2 className="font-display text-3xl mb-6">Student Benefits</h2>
                                     <p className="text-slate-400 leading-relaxed mb-8">
-                                        We ensure that every student under the JYCSM umbrella receives top-tier computer education and globally recognized certification at an affordable cost.
+                                        We ensure that every student under the MJYCSM umbrella receives top-tier computer education and globally recognized certification at an affordable cost.
                                     </p>
                                 </div>
                                 <div className="grid sm:grid-cols-2 gap-6">
